@@ -1,0 +1,49 @@
+1-topshiriq
+
+Ism familiyangizni unicode larini toping
+
+
+void main(){
+ String fullname="Asliddin Bo'riyev";
+ print(fullname.codeUnits);
+}
+
+
+2-topshiriq
+
+97,98,99 ... 121,122 unicode lar berilgan bo'lsa bu ketma ketlikni aslini toping
+
+
+
+void main(){
+  for(int i=97;i<=122;i++){
+    var characters=String.fromCharCode(i);
+    print(characters);
+  }  
+}
+
+
+3-topshiriq
+
+Quyidagi text ning faqat lotin tilidagi harflarining Unicode ni toping. 
+
+String text = "2020  PDP Onlineㅋㅋㅋ";
+
+
+
+
+void main() {
+  String text = "2020  PDP Onlineㅋㅋㅋ";
+  var input = '';
+  List list = [];
+  var item1;
+  list = text.codeUnits;
+
+  for (var item in list) {
+    if (item >= 65 && item <= 122 || item == 32) {
+      item1 = new String.fromCharCode(item);
+      input = input + item1;
+    }
+  }
+  print(input);
+}

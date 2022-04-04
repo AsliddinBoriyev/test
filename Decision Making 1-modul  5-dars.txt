@@ -1,0 +1,51 @@
+1-topshiriq
+
+Task1: Agar berilgan son 20 ning ko`paytmasidan 1 yoki 2 ga ortiq bo`lsa true qiymatni Console da chiqaring.
+
+void main() {
+  int x = 2, a = 41;
+
+  if (x * 20 == a) {
+    print(false);
+  } else if (x*20+1==a || x*20+2==a){
+    print(true);
+  } else {
+    print(false);
+  }
+}
+
+
+2-topshiriq
+
+Manfiy bo`lmagan “num” raqami berilgan, agar son 10 ga qoldiqsiz bo`linuvchi sonlarga ko`pi bilan 2 tagacha farq qilsa true qiymatni Console da chiqaring.
+
+
+void main() {
+  num raqam = 103;
+ 
+  if(raqam % 10 == 0 || raqam % 10 == 0+1 || raqam % 10 == 0+2 || raqam % 10 == 0+8 || raqam % 10 == 0+9){
+  print(true);
+  }
+  else{
+    print(false);
+  }
+}
+
+
+
+3-topshiriq
+
+Ikkita a va b butun son berilgan, ularning yig`indisini Console da chiqaring. Agar, ularning yig`indisi 10...19 oraliqda o`zgarsa, yig`indini o`rniga 20 qiymatni chiqaring.
+
+
+
+void main() {
+  int a = 3;
+  int b = 4;
+  int sum = a + b;
+  if (sum >= 10 && sum <= 19) {
+    print(sum);
+  } else {
+    print("20");
+  }
+}

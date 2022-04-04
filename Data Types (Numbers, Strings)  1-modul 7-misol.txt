@@ -1,0 +1,64 @@
+1-vaizfa
+
+Agar berilgan son 11 ning ko`paytmasi yoki ko`paytmasidan 1 taga ortiq bo`lsa true qiymat Console da chiqaring.
+
+
+
+void main(){
+ int number=22;
+  if(number%11==0||number%11==1){
+    print("True");
+  }
+  else{
+    print("False");
+  }
+
+
+2-vazifa
+
+Str string qiymat berilgan, agar satr “f” bilan boshlansa “Fizz” qiymat, Agar “b” bilan tugasa “Buzz” qiymat Console da chiqaring. Agar yuqoridagi har ikki holat ham to`g`ri bo`lsa, “FizzBuzz” qiymatni chiqaring. Qolgan barcha hollarda str o`zgarishsiz qaytsin.
+
+
+
+void main(){
+ String str='oob';
+  if(str.startsWith('f')&&str.endsWith('b')){
+    print("FizzBuzz");
+  }
+ else if(str.startsWith('f')){
+    print("Fizz");
+  }
+  else if(str.endsWith('b')){
+    print("Buzz");
+  }
+   
+  else{
+    print(str);
+  }
+}
+
+
+
+3-vazifa
+
+Butun n soni berilgan, shu songa “!” belgisini qo`shib string qiymat Console da chiqaring. Masalan n=6 bo`lganda, “6!” qiymat chiqaring. Agar berilgan butun son 3 ga qoldiqsiz bo`linsa  “Fizz” so`zi , 5 ga qoldiqsiz bo`linsa “Buzz” so`zi, agarda ham 3 ga va 5 ga qoldiqsiz bo`linsa “FizzBuzz” so`zi n son o`rniga chiqaring.
+
+
+
+void main(){
+  int number=15;
+  if(number%3==0&&number%5==0){
+    String f="FizzBuzz"+'!';
+    print(f);
+  }
+  
+ else if(number%3==0){
+   String d="Fizz";
+    print(d+'!');
+  }
+  else{
+    String num=number.toString();
+    print(num+'!');
+  }
+
+}

@@ -1,0 +1,59 @@
+1-vazifa
+
+Quyidagi list ning o`rtasidagi element ni 0 bilan almashtiring.
+
+List list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+
+void main(){
+  List list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+  print(list);
+  
+  list[5] = 0;
+  print(list);
+}
+
+
+2-vazifa
+
+Quyidagi Map da ‘user_password’ ni ‘user_pw’ ga almashtiring. 
+
+Map map = {"user_id": "10001", "user_password": "herewego123"};
+
+Before: {"user_id": "10001", "user_password": "herewego123"};
+After: {"user_id": "10001", "user_pw": "herewego123"};
+
+
+void main ( ){
+Map map1 = {"user_id": "10001", "user_password": "herewego123"};
+  Map map2 = {"user_pw": "herewego123"};
+  print("map1: $map1");
+
+  map1.remove("user_password");
+  print("Remove map1: $map1");
+
+  map1.addAll(map2);
+  print("map1.addAll(map2): $map1");
+}
+
+
+
+
+3-vazifa
+
+Quyidagi map ning password da ‘@’ belgi bor yo`qligini tekshirib, yo`q bolsa password ga ‘@’ belgini qo`shib password ni o`zgartiring.
+
+Map map = {"id": "10001", "password": "admin123", "name": "Admin"};
+
+Before: {"id": "10001", "password": "admin123", "name": " Admin"};
+After: {"id": "10001", "password": "admin123@", "name": " Admin"};
+
+
+
+void main(){
+  Map map = {"id": "10001", "password": "admin123", "name": "Admin"};
+  print(map);
+
+  map["password"] = "admin123@";
+  print(map);
+}

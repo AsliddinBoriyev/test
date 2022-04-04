@@ -1,0 +1,87 @@
+Task1: ‘for loopʼ dan foydalanib 1 dan 20 gacha sonlar orasidan faqat toq sonlilarini toping.
+
+Task1: ‘for loopʼ dan foydalanib 1 dan 20 gacha sonlar orasidan faqat toq sonlilarini toping.
+
+
+void main(){
+  for(int i=1; i<=20; i+=2){
+    print(i);
+  }
+}
+
+2-topshiriq
+
+Task2: ‘while loopʼ dan foydalanib 1 dan 20 gacha sonlar orasidan 5 ga bo`linmaydiganlarini toping
+
+void main(){
+  int a = 1;
+  while(a<=20){
+    if(a % 5 != 0){
+      print(a);
+    }
+    a++;
+  }
+}
+
+
+
+3-topshiriq
+
+Task3: 1 dan 99 gacha bo`lgan sonlarning o`rtacha qiymatini toping.
+
+
+
+void main() {
+  double sum = 0;
+  for(int i=1; i<=99; i++){
+    sum += i;
+  }
+  sum = sum/99;
+  print(sum);
+}
+
+
+4-topshiriq
+
+Task4: 3 xonali sonlar ichidan 11 ga bo`linadiganlarining yig`indisini toping.
+
+
+void main(){
+  int sum=0;
+  for(int i=100;i<999;i++){
+    if(i%11==0){
+      sum+=i;
+    }
+  }
+  print(sum);
+}
+
+
+5-topshiriq
+
+Task5: ‘for loopʼ dan foydalanib berilgan sonni tub son ekanini tekshiring.
+
+
+
+void main(){
+  int number=9;
+  bool isTub=true;
+  if(number==0||number==1){
+    print("Bu tub son");
+  }
+  else {
+    for(int i=2;i<number/2;i++){
+      if(number%i==0){
+        isTub=false;
+      }
+    }
+  }
+ if(isTub==false){
+   print("Bu tub son emas");
+ } 
+  else{
+    print("Bu tub son");
+  }
+  
+  
+}

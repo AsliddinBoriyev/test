@@ -1,0 +1,41 @@
+1- topshiriq
+
+Print Type2 orqali quyidagicha o`zingizning ma`lumotlaringizni Console ga ko`rsating.
+First Name- Ism
+Last Name- Familiya
+Middle Name- Otasining ismi
+
+void main() {
+  print("First Name: Asliddin");
+  print("Last Name:Bo'riyev");
+  print("Middele Name: Zafar");
+}
+2-topshiriq
+
+printPdp deb nomlangan String ni Console ga chop qiladigan metod yozing. Va bu metod nima vazifani bajarishi haqida izoh (Comment) qoldirilgan bo`lsin.
+
+Service: PDP Online
+
+void main(){
+  printPdp("Hello Uzbekistan");
+}
+/**printPdp deb nomlangan metod String tipidagi textni yani 
+o'zgaruvchini consolega chiqarib bermoqda*/
+printPdp(String text){
+  print(text);
+
+
+3-topshiriq
+
+Klass nomi MyClass, metod nomi myMethod va print(‘Hello $myname’) lardan foydalanib ismingizni chop qiladigan programma yozing.
+
+class myClass{
+   myMethod(String name){
+   print("Hello "+name);
+   }
+ } 
+  
+void main(){
+  myClass pdp=new myClass();
+  pdp.myMethod("Asliddin");
+}

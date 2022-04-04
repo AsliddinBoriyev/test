@@ -1,0 +1,69 @@
+1-topshiriq
+
+Task 1: Begilgan son musbat bo`lsa Ismingizni, manfiy bo`lsa Familiyangizni chop qiladigan kod yozing.
+
+void main (){
+  int number=1;
+  String name="Asliddin";
+  String lastname ="Bo'riyev";
+  if(number>=0){
+  print (name);
+}
+else{
+  print(lastname);
+}
+}
+
+2-topshiriq
+
+Task 2: Ushbu 12, 5, 4, 2 sonlarining o`rtacha qiymatini 3 ga bo`lgandagi natijaning butun qismini va qoldiq qismlarini toping.
+
+void main(){
+ double ortacha=(12+5+4+2)/4; 
+  print(ortacha);
+  int butun=ortacha ~/3;
+  double qoldiq=ortacha % 3;
+  print("butun qismi: $butun");
+  print("qoldiq qismi: $qoldiq");
+}
+
+3-topshiriq
+
+Task 3: condition ? expr1 : expr2 dan foydalanib 2 ta sonning minimum ni topish kodini yozing.
+
+void main(){
+  int a=4;
+  int b=5;
+  int result=(a>b)? b:a;
+  print ("kichigi= $result");
+  
+}
+
+
+4-topshiriq
+
+Ikkita oʼzgaruvchi qiymatlari oʼrnini almashtiruvchi dasturni tuzing.
+
+void main() {
+  int a = 7;
+  int b = 5;
+  int temp = a;
+  a = b;
+  b = temp;
+  print("a=$a");
+  print("b=$b");
+}
+
+5-topshiriq
+
+Ikkita oʼzgaruvchi qiymatlari qoʼshimcha oʼzgaruvchi ishlatmasdan oʼrnini almashtiruvchi
+
+void main(){
+ int a=4;
+  int b=8;
+  a=a+b;
+  b=a-b;
+  a=a-b;
+  print("a=$a");
+  print("b=$b");
+}
